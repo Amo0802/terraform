@@ -64,6 +64,18 @@ This project demonstrates a comprehensive AWS cloud infrastructure setup using T
   - IAM Roles & Policies
   - Internet Gateway
 
+## Getting Started
+
+To test this project, create a `terraform.tfvars` file in the root directory with the following variables:
+
+```hcl
+aws_region    = "eu-central-1"  # Or any reagion you want
+environment   = "development"
+project_name  = "my-infrastructure"
+instance_type = "t2.micro"
+key_name      = ""
+# Add your keypair file if you want to connect with ssh
+```
 
 ## Credits
 
